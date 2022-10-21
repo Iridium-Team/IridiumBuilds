@@ -1,0 +1,7 @@
+name: IridiumBuilds
+version: '${project.version}'
+main: me.xflyiwnl.iridiumbuilds.IridiumBuilds
+api-version: 1.16
+authors: [ xflyiwnl ]
+description: Плагин на постройки
+website: vk.com/iridiumnetwork
