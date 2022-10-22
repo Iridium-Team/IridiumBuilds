@@ -6,8 +6,7 @@ public final class IridiumBuilds extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        System.out.println("Жопа негра");
     }
 
     @Override
