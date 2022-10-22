@@ -9,8 +9,4 @@ public final class IridiumBuilds extends JavaPlugin {
         System.out.println("Жопа негра");
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
 }
