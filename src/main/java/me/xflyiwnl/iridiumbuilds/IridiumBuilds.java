@@ -42,13 +42,13 @@ public final class IridiumBuilds extends JavaPlugin {
         pluginManager = Bukkit.getPluginManager();
         towny = pluginManager.getPlugin("Towny");
         if (towny == null) {
-            Bukkit.getLogger().info(ChatColor.RED + "IridiumIdeology | Towny не обнаружено");
-            Bukkit.getLogger().info(ChatColor.RED + "IridiumIdeology | IridiumIdeology был выключен");
+            Bukkit.getLogger().info(ChatColor.RED + "IridiumBuilds | Towny не обнаружено");
+            Bukkit.getLogger().info(ChatColor.RED + "IridiumBuilds | IridiumBuilds был выключен");
 
             pluginManager.disablePlugin(this);
         } else {
-            Bukkit.getLogger().info(ChatColor.GREEN + "IridiumIdeology | Подключение к Towny");
-            Bukkit.getLogger().info(ChatColor.GREEN + "IridiumIdeology | IridiumIdeology был включен");
+            Bukkit.getLogger().info(ChatColor.GREEN + "IridiumBuilds | Подключение к Towny");
+            Bukkit.getLogger().info(ChatColor.GREEN + "IridiumBuilds | IridiumBuilds был включен");
         }
 
         BuildsConfiguration.generateDatabaseYaml();
@@ -56,6 +56,15 @@ public final class IridiumBuilds extends JavaPlugin {
         setupBuilds();
         setupCommands();
         setupEvents();
+
+        BuildsConfiguration.loadCityBuilds();
+
+    }
+
+    @Override
+    public void onDisable() {
+
+        BuildsConfiguration.saveCityBuilds();
 
     }
 

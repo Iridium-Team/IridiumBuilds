@@ -15,12 +15,21 @@ public class CityBuilds {
         this.town = town;
     }
 
+    public CityBuilds(Town town, Set<Build> builds) {
+        this.town = town;
+        this.builds = builds;
+    }
+
     public Town getTown() {
         return town;
     }
 
     public Set<Build> getBuilds() {
         return builds;
+    }
+
+    public void setBuilds(Set<Build> builds) {
+        this.builds = builds;
     }
 
     public boolean hasBuild(Build build) {
