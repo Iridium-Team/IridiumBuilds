@@ -15,12 +15,34 @@ public class CityBuilds {
         this.town = town;
     }
 
+    public Town getTown() {
+        return town;
+    }
+
+    public Set<Build> getBuilds() {
+        return builds;
+    }
+
+    public boolean hasBuild(Build build) {
+        for (Build build1 : builds) {
+            if (build1.getName().equals(build.getName())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void addBuild(Build build) {
         builds.add(build);
     }
 
     public void removeBuild(Build build) {
-        for ()
+        for (Build build1 : builds) {
+            if (build1.getName().equals(build.getName())) {
+                builds.remove(build);
+                break;
+            }
+        }
     }
 
 }

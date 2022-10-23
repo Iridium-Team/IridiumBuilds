@@ -4,7 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-public class BuildsCommand implements CommandExecutor {
+public class AdminBuildsCommand implements CommandExecutor {
 
 
     @Override
@@ -14,5 +14,4 @@ public class BuildsCommand implements CommandExecutor {
 
         return true;
     }
-
 }
