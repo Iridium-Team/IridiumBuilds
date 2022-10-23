@@ -49,6 +49,7 @@ public final class IridiumBuilds extends JavaPlugin {
 
         setupBuilds();
         setupCommands();
+
     }
 
     /*
