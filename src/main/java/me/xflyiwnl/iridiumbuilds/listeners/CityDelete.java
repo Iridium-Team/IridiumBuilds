@@ -4,8 +4,10 @@ import com.palmergames.bukkit.towny.event.DeleteTownEvent;
 import me.xflyiwnl.iridiumbuilds.IridiumBuilds;
 import me.xflyiwnl.iridiumbuilds.configuration.BuildsConfiguration;
 import me.xflyiwnl.iridiumbuilds.objects.CityBuilds;
+import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
 
 public class CityDelete implements Listener {
 
