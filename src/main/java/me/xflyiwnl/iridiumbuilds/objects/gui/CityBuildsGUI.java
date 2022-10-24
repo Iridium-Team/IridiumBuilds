@@ -68,7 +68,7 @@ public class CityBuildsGUI {
             //todo
         }
 
-        // hello
+        // hello s
 
         paginatedGui.open(player);
 
