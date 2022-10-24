@@ -68,7 +68,6 @@ public class CityBuildsGUI {
             //todo
         }
 
-        // 1
 
         paginatedGui.open(player);
 
