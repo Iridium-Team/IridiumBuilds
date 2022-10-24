@@ -70,7 +70,6 @@ public class CityBuildsGUI {
 
         // 1
         // 2
-        // 3
 
         paginatedGui.open(player);
 
