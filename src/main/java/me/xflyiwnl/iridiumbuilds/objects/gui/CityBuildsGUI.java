@@ -68,8 +68,6 @@ public class CityBuildsGUI {
             //todo
         }
 
-        // hellosadasd
-
         paginatedGui.open(player);
 
     }
